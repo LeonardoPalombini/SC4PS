@@ -7,7 +7,7 @@ This guide is meant to be a short reference to create a CloudVeneto virtual mach
 1. Have your CloudVeneto account
 2. Having requested the access to project-related resources
 
-# Create a new VM
+## Create a new VM
 
 1. Enter your personal [CloudVeneto](https://cloudveneto.it) project dashboard
 2. Create an ssh key pair (button on the left dropdown)
@@ -15,7 +15,7 @@ This guide is meant to be a short reference to create a CloudVeneto virtual mach
 4. Inside setup popup window, set all the mandatory VM options: name, origin, flavour, key pair (your own)
 5. Execute the instance
 
-# VM access setup
+## VM access setup
 
 1. Download your key pair
 2. Set key pair permissions: `chmod 600 key_pair.pem`
@@ -27,7 +27,7 @@ This guide is meant to be a short reference to create a CloudVeneto virtual mach
     	IdentityFile /path/to/key_pair.pem
 5. You can now access your machine: `ssh <name>`
 
-# Compile and run C scripts
+## Compile and run C scripts
 
 1. Install a compiler, eg: `sudo yum install gcc` or a more complete set of tools (gcc, make...): `sudo dnf groupinstall "Development Tools"`
 2. Installing git is recommended: `sudo yum install git`
