@@ -16,9 +16,14 @@ a=1.0
 x=1.0
 y=1.0
 ```
-The input parse is done via the INI library.
+The input parse is done via the INI library, included locally.
 
-The result is written to a HTF5 file. (...)
+The result is written to a HDF5 file.
+
+## Install HDF5
+```
+sudo dnf install hdf5-devel
+```
 
 ## Compilation
 ```

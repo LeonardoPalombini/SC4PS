@@ -3,5 +3,6 @@
 *.csv
 *.zip
 *.h5
+*.ipynb
 ./hw04/fft_example/build/
 ./hw06/product_htf5
