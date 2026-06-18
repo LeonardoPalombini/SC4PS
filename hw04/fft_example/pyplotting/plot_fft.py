@@ -57,7 +57,7 @@ def parse_args():
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
-def find_peaks(frequencies, magnitudes, n=5, min_magnitude=1e-6):
+def find_peaks(frequencies, magnitudes, n=3, min_magnitude=1e-6):
     """Return indices of the top-n magnitude peaks (simple local-max filter)."""
     from scipy.signal import find_peaks as sp_find_peaks
     # Use scipy if available, otherwise fall back to argsort
@@ -110,7 +110,7 @@ def main():
     print(f"Range   : 0 – {nyquist:.1f} Hz  |  resolution: {freq_res:.4f} Hz/bin")
 
     # ── Detect peaks ──────────────────────────────────────────────────────────
-    peak_idx = find_peaks(freq, mag, n=5)
+    peak_idx = find_peaks(freq, mag, n=3)
     print("\nTop spectral peaks:")
     print(f"  {'Frequency (Hz)':>16}  {'Magnitude':>12}  {'Phase (rad)':>12}")
     for i in peak_idx:

@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
     Component components[] = {
         { 50.0,  1.00 },
         { 120.0, 0.50 },
-        { 305.2, 0.25 },
+        { 300.0, 0.25 },
     };
     size_t n_components = sizeof(components) / sizeof(components[0]);
 
